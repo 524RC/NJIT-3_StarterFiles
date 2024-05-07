@@ -35,9 +35,9 @@ const vue_app = Vue.createApp({
             movies: [],
             title:"IMDB + Ryan's Top 8 Movies",
             owner:"Ryan",
-            github:"https://github.com/524RC/NJIT-3_StarterFiles"
+            github:"https://github.com/524RC/NJIT-3_StarterFiles",
             /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
-            
+          
       }
     },
       methods: {
