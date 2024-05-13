@@ -41,7 +41,35 @@ const vue_app = Vue.createApp({
       }
     },
       methods: {
-            /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
+            getMonthText(dataArray) {
+                  var year = dataArray[0];
+                  var month = this.months[dataArray[1] - 1]
+                  var day = dataArray[2];
+
+                  return month +' ' + day + ', ' + year;
+            },
+
+            like(index) {
+                  this.movies[index].likes++;
+            },
+
+            dislike(index) {
+                  this.movies[index].dislike++;
+            },
+
+            posterClick(index) {
+                  this.movies[index].posterindex++;
+                  if(this.movies[index].posterindex >= this.movies[index].posters.length) {
+                        this.movies[index].posterindex = 0;
+                  }
+            },
+
+            timeText(minutes) {
+                  var hours = Math.floor(minutes/60);
+                  var minutes = minutes%60;
+
+                  return hours + ' hours ' + minutes + ' minutes ';
+            }
       }
 })
 
