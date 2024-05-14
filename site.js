@@ -41,15 +41,55 @@ const vue_app = Vue.createApp({
       }
     },
       methods: {
-            getMonthText(dataArray) {
-                  var year = dataArray[0];
-                  var month = this.months[dataArray[1] - 1]
-                  var day = dataArray[2];
+            getMonthText(dateArray) {
+                  var year = dateArray[0];
+                  var day = dateArray[2];
+                  let month
+
+                  switch(dateArray[1]){
+                        case 1:
+                              month = 'January'
+                              break
+                        case 2:
+                              month = "February"
+                              break
+                        case 3:
+                              month = 'March'
+                              break
+                        case 4:
+                              month = "April"
+                              break
+                        case 5:
+                              month = 'May'
+                              break
+                        case 6:
+                              month = "June"
+                              break
+                        case 7:
+                              month = 'July'
+                              break
+                        case 8:
+                              month = "August"
+                              break
+                        case 9:
+                              month = 'September'
+                              break
+                        case 10:
+                              month = "October"
+                              break
+                        case 11:
+                              month = "December"
+                              break
+                        case 12:
+                              month = "November"
+                              break
+                  }
+                  
 
                   return month +' ' + day + ', ' + year;
             },
 
-            like(index) {
+            like(index) { 
                   this.movies[index].likes++;
             },
 
@@ -58,9 +98,11 @@ const vue_app = Vue.createApp({
             },
 
             posterClick(index) {
-                  this.movies[index].posterindex++;
-                  if(this.movies[index].posterindex >= this.movies[index].posters.length) {
+                  if(this.movies[index].posterindex >= this.movies[index].posters.length-2) {
                         this.movies[index].posterindex = 0;
+                  }
+                  else{
+                        this.movies[index].posterindex++
                   }
             },
 
