@@ -88,21 +88,13 @@ const vue_app = Vue.createApp({
 
                   return month +' ' + day + ', ' + year;
             },
-
-            like(index) { 
-                  this.movies[index].likes++;
-            },
-
-            dislike(index) {
-                  this.movies[index].dislike++;
-            },
-
             posterClick(index) {
-                  if(this.movies[index].posterindex >= this.movies[index].posters.length-2) {
-                        this.movies[index].posterindex = 0;
+                  if(this.movies[index].posterindex < this.movies[index].posters.length){
+                        this.movies[index].posterindex++;
+                       
                   }
-                  else{
-                        this.movies[index].posterindex++
+                  if(this.movies[index].posterindex >= this.movies[index].posters.length){
+                        this.movies[index].posterindex = 0;
                   }
             },
 
