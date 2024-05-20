@@ -68,5 +68,47 @@
             "likes": 812,
             "dislikes": 101,
             "posterindex": 0
+      },
+      {
+            "title": "Kung Fu Panda 2",
+            "iscore": 8.9,
+            "rating": "R",
+            "runtime": 92,
+            "released": [1993, 11, 30],
+            "country": "USA",
+            "posters": ["img/KFP1 (2).jpg"],
+            "imdb": "http://www.imdb.com/title/tt0108052",
+            "website": "https://www.uphe.com/schindlers-list",
+            "likes": 812,
+            "dislikes": 101,
+            "posterindex": 0
+      },
+      {
+            "title": "Howl's Moving Castle",
+            "iscore": 8.9,
+            "rating": "R",
+            "runtime": 129,
+            "released": [1993, 11, 30],
+            "country": "USA",
+            "posters": ["img/HMC1 (1).jpg","img/Howls (1).jpg"],
+            "imdb": "http://www.imdb.com/title/tt0108052",
+            "website": "https://www.uphe.com/schindlers-list",
+            "likes": 812,
+            "dislikes": 101,
+            "posterindex": 0
+      },
+      {
+            "title": "Spiderman Across The Spider-verse",
+            "iscore": 8.9,
+            "rating": "E",
+            "runtime": 140,
+            "released": [2023, 5, 2],
+            "country": "USA",
+            "posters": ["img/SMATS (1).jpg"],
+            "imdb": "http://www.imdb.com/title/tt0108052",
+            "website": "https://www.uphe.com/schindlers-list",
+            "likes": 812,
+            "dislikes": 101,
+            "posterindex": 0
       }
 ]
